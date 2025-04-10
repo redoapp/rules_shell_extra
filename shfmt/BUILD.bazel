@@ -6,7 +6,7 @@ toolchain(
         "@platforms//cpu:aarch64",
         "@platforms//os:linux",
     ],
-    toolchain = "//shell/shfmt-rules/default:linux_arm64",
+    toolchain = "//shfmt/default:linux_arm64",
     toolchain_type = ":toolchain_type",
 )
 
@@ -16,7 +16,7 @@ toolchain(
         "@platforms//cpu:x86_64",
         "@platforms//os:linux",
     ],
-    toolchain = "//shell/shfmt-rules/default:linux_amd64",
+    toolchain = "//shfmt/default:linux_amd64",
     toolchain_type = ":toolchain_type",
 )
 
@@ -26,7 +26,7 @@ toolchain(
         "@platforms//cpu:aarch64",
         "@platforms//os:macos",
     ],
-    toolchain = "//shell/shfmt-rules/default:darwin_arm64",
+    toolchain = "//shfmt/default:darwin_arm64",
     toolchain_type = ":toolchain_type",
 )
 
@@ -36,7 +36,7 @@ toolchain(
         "@platforms//cpu:x86_64",
         "@platforms//os:macos",
     ],
-    toolchain = "//shell/shfmt-rules/default:darwin_amd64",
+    toolchain = "//shfmt/default:darwin_amd64",
     toolchain_type = ":toolchain_type",
 )
 

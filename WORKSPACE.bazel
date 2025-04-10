@@ -12,23 +12,6 @@ http_archive(
     url = "https://github.com/bazelbuild/bazel-skylib/releases/download/%s/bazel-skylib-%s.tar.gz" % (SKYLIB_VERSION, SKYLIB_VERSION),
 )
 
-# Aspect Bazel Lib
-
-ASPECT_BAZEL_LIB_VERSION = "2.8.1"
-
-http_archive(
-    name = "aspect_bazel_lib",
-    sha256 = "688354ee6beeba7194243d73eb0992b9a12e8edeeeec5b6544f4b531a3112237",
-    strip_prefix = "bazel-lib-%s" % ASPECT_BAZEL_LIB_VERSION,
-    url = "https://github.com/aspect-build/bazel-lib/releases/download/v%s/bazel-lib-v%s.tar.gz" % (ASPECT_BAZEL_LIB_VERSION, ASPECT_BAZEL_LIB_VERSION),
-)
-
-load("@aspect_bazel_lib//lib:repositories.bzl", "aspect_bazel_lib_dependencies", "aspect_bazel_lib_register_toolchains")
-
-aspect_bazel_lib_dependencies()
-
-aspect_bazel_lib_register_toolchains()
-
 # Rules Python
 
 RULES_PYTHON_VERSION = "0.31.0"
@@ -76,7 +59,7 @@ buildifier_toolchains()
 
 # Redo
 
-load("//shell/shfmt-rules:workspace.bzl", "shfmt_repositories", "shfmt_toolchains")
+load("//shfmt:workspace.bzl", "shfmt_repositories", "shfmt_toolchains")
 
 shfmt_repositories()
 

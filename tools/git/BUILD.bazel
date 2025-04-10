@@ -1,4 +1,4 @@
-load("//shell/rules:rules.bzl", "sh_binary")
+load("//shell:rules.bzl", "sh_binary")
 
 sh_binary(
     name = "files",

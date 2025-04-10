@@ -1,4 +1,4 @@
-load("//shell/shfmt-rules:rules.bzl", "shfmt_toolchain")
+load("//shfmt:rules.bzl", "shfmt_toolchain")
 
 package(default_visibility = ["//visibility:public"])
 
