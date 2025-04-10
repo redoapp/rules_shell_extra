@@ -1,0 +1,23 @@
+load("//shell/shfmt-rules:rules.bzl", "shfmt_toolchain")
+
+package(default_visibility = ["//visibility:public"])
+
+shfmt_toolchain(
+    name = "darwin_amd64",
+    bin = "@shfmt_darwin_amd64//file",
+)
+
+shfmt_toolchain(
+    name = "darwin_arm64",
+    bin = "@shfmt_darwin_arm64//file",
+)
+
+shfmt_toolchain(
+    name = "linux_amd64",
+    bin = "@shfmt_linux_amd64//file",
+)
+
+shfmt_toolchain(
+    name = "linux_arm64",
+    bin = "@shfmt_linux_arm64//file",
+)
