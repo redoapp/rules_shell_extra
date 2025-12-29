@@ -1,5 +1,5 @@
-load("@rules_file//file:rules.bzl", "bazelrc_deleted_packages")
-load("@rules_file//generate:rules.bzl", "generate")
+load("@bazel_util//file:rules.bzl", "bazelrc_deleted_packages")
+load("@bazel_util//generate:rules.bzl", "generate")
 load("//shell:rules.bzl", sh_binary_ = "sh_binary")
 
 package(default_visibility = ["//visibility:public"])

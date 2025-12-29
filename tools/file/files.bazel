@@ -8,11 +8,7 @@ filegroup(
 # executable shell files without extension
 filegroup(
     name = "shfmt_exec_files",
-    srcs = glob(["files/.github/**/*"], exclude = [
-        "files/**/.*",
-        "files/**/*.*",
-        "files/**/CODEOWNERS",
-    ]),
+    srcs = [],
 )
 
 filegroup(

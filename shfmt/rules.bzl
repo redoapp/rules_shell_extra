@@ -1,5 +1,5 @@
 load("@bazel_skylib//lib:paths.bzl", "paths")
-load("@rules_file//generate:providers.bzl", "FormatterInfo")
+load("@bazel_util//generate:providers.bzl", "FormatterInfo")
 
 def _shfmt_format(ctx, src, out, bin):
     args = ctx.actions.args()
