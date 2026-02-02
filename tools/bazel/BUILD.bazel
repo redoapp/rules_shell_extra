@@ -1,14 +1,6 @@
-load("@bazel_util//file:rules.bzl", "bazelrc_deleted_packages")
-load("@bazel_util//generate:rules.bzl", "generate")
 load("//shell:rules.bzl", sh_binary_ = "sh_binary")
 
 package(default_visibility = ["//visibility:public"])
-
-bazelrc_deleted_packages(
-    name = "bazelrc",
-    output = "deleted.bazelrc",
-    packages = ["@files//:packages"],
-)
 
 sh_binary(
     name = "run",
@@ -18,7 +10,7 @@ sh_binary(
 sh_binary_(
     name = "refresh",
     data = [
-        ":bazelrc",
+        "@files//packages:bazelrc",
     ],
     main = "refresh.sh",
 )

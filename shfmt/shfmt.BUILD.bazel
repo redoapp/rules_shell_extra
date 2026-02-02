@@ -1,0 +1,14 @@
+load("%{rules}", "shfmt_toolchain")
+load("%{sh_binary_rules}", "sh_binary")
+
+package(default_visibility = ["//visibility:public"])
+
+sh_binary(
+    name = "bin",
+    srcs = ["shfmt"],
+)
+
+shfmt_toolchain(
+    name = "toolchain",
+    bin = "bin",
+)

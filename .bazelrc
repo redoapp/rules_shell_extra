@@ -4,7 +4,7 @@ startup --host_jvm_args=-Xmx1024m
 startup --windows_enable_symlinks
 
 # Files
-import %workspace%/tools/bazel/deleted.bazelrc
+import %workspace%/tools/file/files.bazelrc
 
 # Config
 common --enable_platform_specific_config
@@ -14,7 +14,6 @@ common:ci --show_progress_rate_limit=3
 
 # Bzlmod
 common --enable_workspace
-common --noenable_bzlmod
 
 # Tags
 common --incompatible_allow_tags_propagation

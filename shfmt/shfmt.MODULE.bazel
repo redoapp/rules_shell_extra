@@ -1,0 +1,23 @@
+shfmt = use_extension("//shfmt:extensions.bzl", "shfmt")
+use_repo(
+    shfmt,
+    "shfmt_darwin_amd64",
+    "shfmt_darwin_arm64",
+    "shfmt_linux_386",
+    "shfmt_linux_amd64",
+    "shfmt_linux_arm",
+    "shfmt_linux_arm64",
+    "shfmt_windows_386",
+    "shfmt_windows_amd64",
+)
+
+register_toolchains(
+    "//shfmt:linux_aarch32_toolchain",
+    "//shfmt:linux_aarch64_toolchain",
+    "//shfmt:linux_x86_32_toolchain",
+    "//shfmt:linux_x86_64_toolchain",
+    "//shfmt:macos_aarch64_toolchain",
+    "//shfmt:macos_x86_64_toolchain",
+    "//shfmt:windows_x86_32_toolchain",
+    "//shfmt:windows_x86_64_toolchain",
+)
