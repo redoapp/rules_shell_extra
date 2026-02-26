@@ -1,5 +1,5 @@
-load("%{rules}", "shfmt_toolchain")
-load("%{sh_binary_rules}", "sh_binary")
+load(%{rules}, "shfmt_toolchain")
+load(%{sh_binary_rules}, "sh_binary")
 
 package(default_visibility = ["//visibility:public"])
 

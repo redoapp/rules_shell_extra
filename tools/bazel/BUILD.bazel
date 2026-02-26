@@ -1,13 +1,8 @@
-load("//shell:rules.bzl", sh_binary_ = "sh_binary")
+load("//shell:rules.bzl", "sh_binary")
 
 package(default_visibility = ["//visibility:public"])
 
 sh_binary(
-    name = "run",
-    srcs = ["run.sh"],
-)
-
-sh_binary_(
     name = "refresh",
     data = [
         "@files//packages:bazelrc",

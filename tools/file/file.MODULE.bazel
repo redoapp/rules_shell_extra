@@ -1,8 +1,10 @@
 file = use_extension("@bazel_util//file:extensions.bzl", "file", dev_dependency = True)
 file.files(
-    name = "files",
+    name = "rules_shell_extra_files",
     bazelrc = "tools/file/files.bazelrc",
     build = "//tools/file:files.bazel",
-    root_file = "//:MODULE.bazel",
+    ignore_directories = [
+        "**/.git",
+    ],
 )
-use_repo(file, "files")
+use_repo(file, files = "rules_shell_extra_files")

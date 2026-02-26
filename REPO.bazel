@@ -1,0 +1,4 @@
+# Keep in sync with tools/file/file.MODULE.bazel ignore_directories
+ignore_directories([
+    "**/.git",
+])
