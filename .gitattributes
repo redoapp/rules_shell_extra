@@ -1,3 +1,5 @@
 *.lock linguist-generated
 
+/tools/bazel_/bazelrc/ linguist-vendored
+/tools/bazel_/preset.bazelrc linguist-generated
 /tools/file/files.bazelrc linguist-generated

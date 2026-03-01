@@ -1,4 +1,5 @@
 .bazel-npm-cache.json
+.bazelrc.user
 .cdktf
 .DS_Store
 .env

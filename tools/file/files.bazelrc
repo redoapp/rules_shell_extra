@@ -2,7 +2,7 @@
 build --deleted_packages=@bazel_util++file+rules_shell_extra_files//files
 build --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/shell
 build --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/shfmt
-build --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/bazel
+build --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/bazel_
 build --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/file
 build --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/git
 build --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/lint
@@ -10,7 +10,7 @@ build --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/
 query --deleted_packages=@bazel_util++file+rules_shell_extra_files//files
 query --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/shell
 query --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/shfmt
-query --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/bazel
+query --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/bazel_
 query --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/file
 query --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/git
 query --deleted_packages=@bazel_util++file+rules_shell_extra_files//files/tools/lint

@@ -1,11 +1,16 @@
 package(default_visibility = ["//visibility:public"])
 
 alias(
+    name = "bazelrc",
+    actual = "//tools/bazel_:bazelrc",
+)
+
+alias(
     name = "lint",
     actual = "//tools/lint",
 )
 
 alias(
     name = "refresh",
-    actual = "//tools/bazel:refresh",
+    actual = "//tools/bazel_:refresh",
 )
