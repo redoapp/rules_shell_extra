@@ -8,10 +8,10 @@ filegroup(
 # executable shell files without extension
 filegroup(
     name = "shfmt_exec_files",
-    srcs = [],
+    srcs = ["files/shfmt/format.sh"],
 )
 
 filegroup(
     name = "shfmt_files",
-    srcs = glob(["files/**/*.sh"]),
+    srcs = glob(["files/**/*.sh"], ["files/shfmt/format.sh"]),
 )

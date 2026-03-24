@@ -4,4 +4,10 @@ package(default_visibility = ["//visibility:public"])
 
 shfmt_format(
     name = "shfmt",
+    options = [
+        "-ci",
+        "-i",
+        "4",
+        "-s",
+    ],
 )
